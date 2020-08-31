@@ -1,14 +1,4 @@
 module.exports = {
-    // getTickets(req,res,next) {
-    //     req.db.collection('tickets')
-    //     .find({}, {sort: {_id: -1}})
-    //     .toArray((error, tickets) => {
-    //         if(error) return next(error);
-    //         console.log('Sent!');
-    //         res.send(tickets);
-    //     })
-    // },
-
     getTickets(req,res,next) { 
         req.db.collection('tickets')
         .aggregate([
